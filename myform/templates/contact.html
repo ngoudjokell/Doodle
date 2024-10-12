@@ -1,0 +1,6 @@
+<h1>VEUILLEZ RENSEIGNER LE FORMULAIRE SUIVANT</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ contact_form.as_p}}
+    <button type="submit">Envoyer</button>
+</form>
